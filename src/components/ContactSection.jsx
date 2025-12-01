@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { sendEmail } from '../api/sendEmail';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -50,15 +51,25 @@ const ContactSection = () => {
     setIsSubmitting(true);
     setSubmitStatus('');
 
-    // Simulate form submission (replace with actual implementation)
-    setTimeout(() => {
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', message: '' });
+    try {
+      const result = await sendEmail(formData);
+      
+      if (result.success) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+        console.error('Email sending failed:', result.error);
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      console.error('Form submission error:', error);
+    } finally {
       setIsSubmitting(false);
       
-      // Reset status after 3 seconds
-      setTimeout(() => setSubmitStatus(''), 3000);
-    }, 2000);
+      // Reset status after 5 seconds
+      setTimeout(() => setSubmitStatus(''), 5000);
+    }
   };
 
   const containerVariants = {

@@ -193,4 +193,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;git 
+export default Hero;

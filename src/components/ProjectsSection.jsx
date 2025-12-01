@@ -56,14 +56,6 @@ const ProjectsSection = () => {
       icon: FaDatabase,
     },
   ];
-
-  const categories = [
-    { value: 'all', label: 'All Projects' },
-    { value: 'web', label: 'Web Apps' },
-    { value: 'app', label: 'Applications' },
-    { value: 'design', label: 'Design' },
-  ];
-
   const filteredProjects = filter === 'all' 
     ? projects 
     : projects.filter(project => project.category === filter);
@@ -106,31 +98,6 @@ const ProjectsSection = () => {
           <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
             Explore my recent projects showcasing my skills in React.js, modern web technologies, and creative problem-solving.
           </p>
-        </motion.div>
-
-        {/* Filter Buttons */}
-        <motion.div
-          className="flex flex-wrap justify-center gap-3 mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          {categories.map((category) => (
-            <motion.button
-              key={category.value}
-              onClick={() => setFilter(category.value)}
-              className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
-                filter === category.value
-                  ? 'bg-primary text-white shadow-lg'
-                  : 'glass text-gray-300 hover:text-white hover:bg-white/10'
-              }`}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {category.label}
-            </motion.button>
-          ))}
         </motion.div>
 
         {/* Projects Grid */}

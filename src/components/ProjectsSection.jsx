@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaCode, FaPalette, FaMobile, FaDatabase } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const ProjectsSection = () => {
   const [filter, setFilter] = useState('all');
@@ -253,17 +254,15 @@ const ProjectsSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <motion.a
-            href="https://github.com/arham-ali1323"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-3 glass text-white rounded-full font-medium hover:bg-white/10 transition-all duration-200"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <FaGithub className="w-5 h-5" />
-            View More Projects on GitHub
-          </motion.a>
+          <Link to="/projects">
+            <motion.div
+              className="inline-flex items-center gap-2 px-8 py-3 glass text-white rounded-full font-medium hover:bg-white/10 transition-all duration-200 cursor-pointer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              View More Projects
+            </motion.div>
+          </Link>
         </motion.div>
       </div>
     </section>

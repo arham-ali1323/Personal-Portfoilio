@@ -1,15 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaDownload, FaArrowDown } from 'react-icons/fa';
-import { SiLeetcode, SiCodeforces } from 'react-icons/si';
+import { Link } from 'react-router-dom';
+import { FaGithub, FaLinkedin, FaArrowDown } from 'react-icons/fa';
 import FlipWords from './FlipWords';
 
 const Hero = () => {
   const socialLinks = [
     { icon: FaGithub, href: 'https://github.com/arham-ali1323', label: 'GitHub' },
-    { icon: FaLinkedin, href: '#', label: 'LinkedIn' },
-    { icon: SiLeetcode, href: '#', label: 'LeetCode' },
-    { icon: SiCodeforces, href: '#', label: 'Codeforces' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/arham-ali-973359289/', label: 'LinkedIn' }
   ];
 
   return (
@@ -31,15 +29,15 @@ const Hero = () => {
           
           {/* Left Side - Profile Image */}
           <motion.div
-            className="flex justify-center lg:justify-end order-2 lg:order-1"
+            className="flex justify-center lg:justify-end order-2 lg:order-1 mx-8 lg:mx-12"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <div className="relative">
-              <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-full overflow-hidden border-4 border-white/20 glass shadow-2xl">
+              <div className="w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[24rem] lg:h-[24rem] xl:w-[32rem] xl:h-[32rem] rounded-full overflow-hidden border-4 border-white/20 glass shadow-2xl bg-gradient-to-br from-slate-800 via-slate-900 to-slate-950">
                 <img
-                  src="/your-image-name.jpg"
+                  src="/your-image-name.png"
                   alt="Arham Ali"
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -71,7 +69,7 @@ const Hero = () => {
 
             {/* Main title */}
             <motion.h1
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6"
+              className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -81,7 +79,7 @@ const Hero = () => {
 
             {/* Role */}
             <motion.div
-              className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-300 mb-4"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-300 mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
@@ -94,7 +92,7 @@ const Hero = () => {
 
             {/* Tagline */}
             <motion.p
-              className="text-sm sm:text-base md:text-lg text-gray-400 mb-8 max-w-lg lg:max-w-xl"
+              className="text-lg sm:text-xl md:text-2xl text-gray-400 mb-8 max-w-lg lg:max-w-xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -109,17 +107,18 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
             >
-            <motion.button
-              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-6 sm:px-8 py-2 sm:py-3 bg-primary text-white rounded-full text-sm sm:text-base font-medium hover:bg-primary/80 transition-all duration-200 shadow-lg hover:shadow-xl"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              View Projects
-            </motion.button>
+            <Link to="/projects">
+              <motion.button
+                className="px-8 sm:px-10 py-4 sm:py-5 bg-primary text-white rounded-full text-lg sm:text-xl font-medium hover:bg-primary/80 transition-all duration-200 shadow-lg hover:shadow-xl"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                View Projects
+              </motion.button>
+            </Link>
             <motion.button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-6 sm:px-8 py-2 sm:py-3 glass text-white rounded-full text-sm sm:text-base font-medium hover:bg-white/10 transition-all duration-200"
+              className="px-8 sm:px-10 py-4 sm:py-5 glass text-white rounded-full text-lg sm:text-xl font-medium hover:bg-white/10 transition-all duration-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -155,7 +154,7 @@ const Hero = () => {
 
           {/* Location and Contact Info */}
           <motion.div
-            className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 text-gray-400 text-sm"
+            className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 text-gray-400 text-xs sm:text-sm"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}

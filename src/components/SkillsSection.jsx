@@ -170,8 +170,7 @@ const SkillsSection = () => {
           <div className="flex flex-wrap justify-center gap-3">
             {[
               'React.js', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS',
-              'Git', 'GitHub', 'VS Code', 'Figma', 'Responsive Design',
-              'Web Performance', 'REST APIs', 'Modern ES6+', 'Component Architecture'
+              'Git', 'GitHub', 'VS Code', 'Figma', 'Responsive Design','Web Performance', 'Bootstrap', 'Modern ES6+', 'Component Architecture', 'Shadcn Ui','Material UI',
             ].map((tech, index) => (
               <motion.span
                 key={tech}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBars, FaTimes, FaGithub, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaBars, FaTimes, FaGithub, FaEnvelope, FaPhone, FaWhatsapp } from 'react-icons/fa';
 
 const Navbar = ({ isScrolled }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,7 +48,7 @@ const Navbar = ({ isScrolled }) => {
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 md:hidden z-50 transition-all duration-300 ${
         isScrolled ? 'glass shadow-lg' : 'bg-transparent'
       }`}
       initial={{ y: -100 }}
@@ -187,6 +187,15 @@ const Navbar = ({ isScrolled }) => {
                   aria-label="Phone"
                 >
                   <FaPhone className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://wa.me/923211051323"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors"
+                  aria-label="WhatsApp"
+                >
+                  <FaWhatsapp className="w-5 h-5" />
                 </a>
                 <a
                   href="https://github.com/arham-ali1323"

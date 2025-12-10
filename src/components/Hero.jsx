@@ -11,7 +11,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="relative py-10 min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section id="home" className="relative py-10 min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-20">
       {/* Animated background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/20 to-indigo-900/20">
         <div className="absolute inset-0 bg-black/40"></div>

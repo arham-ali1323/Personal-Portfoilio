@@ -9,9 +9,9 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A modern e-commerce website with shopping cart, product filtering, and payment integration. Built with React and Tailwind CSS.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop',
+      title: 'AlphaSoft-360',
+      description: 'A modern e-commerce website developed at AlphaSoft360, featuring a fully functional shopping cart, advanced product filtering, and secure payment integration. The platform is built using React and Tailwind CSS, ensuring a fast, responsive, and seamless user experience.',
+      image: '/AlphaSoft360.png',
       technologies: ['React.js', 'Tailwind CSS', 'Context API', 'Local Storage'],
       category: 'web',
       liveUrl: '#',
@@ -21,9 +21,9 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'A comprehensive task management application with drag-and-drop functionality, categories, and progress tracking.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop',
+      title: 'ShopHub',
+      description: 'A modern ShopHub e-commerce website featuring a fully functional shopping cart, advanced product filtering, and seamless payment integration. Built with React and Tailwind CSS for a fast, responsive, and clean user experience.',
+      image: '/ShopHub.png',
       technologies: ['React.js', 'Framer Motion', 'Local Storage', 'CSS Animations'],
       category: 'app',
       liveUrl: '#',
@@ -33,9 +33,9 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'Real-time weather application with location-based forecasts, interactive maps, and beautiful data visualizations.',
-      image: 'https://images.unsplash.com/photo-1592210454771-2a0c9c7b5c38?w=800&h=400&fit=crop',
+      title: 'CarRental',
+      description: 'A real-time car rental application featuring live vehicle availability, location-based search, interactive maps, and smooth UI components for a modern booking experience.',
+      image: '/CarRental.png',
       technologies: ['React.js', 'Weather API', 'Chart.js', 'Geolocation'],
       category: 'web',
       liveUrl: '#',
@@ -45,9 +45,9 @@ const ProjectsSection = () => {
     },
     {
       id: 4,
-      title: 'Portfolio Website',
-      description: 'A stunning personal portfolio website with smooth animations, responsive design, and modern UI components.',
-      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=400&fit=crop',
+      title: 'Gym and Fitness',
+      description: 'A stunning personal gym portfolio website designed to showcase trainers, classes, and success stories with smooth animations and responsive layouts. Modern UI components and clear calls-to-action create an engaging experience that converts visitors into members.',
+      image: '/Gym and Fitness.png',
       technologies: ['React.js', 'Tailwind CSS', 'Framer Motion', 'Vite'],
       category: 'design',
       liveUrl: '#',
@@ -116,11 +116,11 @@ const ProjectsSection = () => {
               className="glass rounded-xl overflow-hidden group"
             >
               {/* Project Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-64 overflow-hidden bg-gray-900/50">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                 />
                 
                 {/* Overlay */}

@@ -16,8 +16,8 @@ const ContactSection = () => {
     {
       icon: FaEnvelope,
       label: 'Email',
-      value: 'arham.ali1323@gmail.com',
-      href: 'mailto:arham.ali1323@gmail.com',
+      value: 'arhamali.dev@gmail.com',
+      href: 'mailto:arhamali.dev@gmail.com',
     },
     {
       icon: FaPhone,

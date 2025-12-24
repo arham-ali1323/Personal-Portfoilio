@@ -174,8 +174,8 @@ const ExperienceSection = () => {
             </h3>
             <div className="flex items-center justify-center space-x-4 text-gray-300">
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">2+</div>
-                <div className="text-sm">Years Experience</div>
+                <div className="text-2xl font-bold text-primary">Fresher</div>
+                <div className="text-sm">Experience</div>
               </div>
               <div className="w-px h-12 bg-gray-600"></div>
               <div className="text-center">

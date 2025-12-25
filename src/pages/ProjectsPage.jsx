@@ -44,7 +44,7 @@ const ProjectsPage = () => {
   const filterAndSortRepos = () => {
     let filtered = repos.filter(repo => !repo.fork && !repo.archived);
 
-    // Filter by search term
+
     if (searchTerm) {
       filtered = filtered.filter(repo =>
         repo.name.toLowerCase().includes(searchTerm.toLowerCase()) ||

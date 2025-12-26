@@ -19,12 +19,14 @@ const ContactSection = () => {
       value: 'arhamali.dev@gmail.com',
       href: 'mailto:arhamali.dev@gmail.com',
     },
+    // phone number
     {
       icon: FaPhone,
       label: 'Phone',
       value: '+92 321 105 1323',
       href: 'tel:+923211051323',
     },
+    // location 
     {
       icon: FaMapMarkerAlt,
       label: 'Location',

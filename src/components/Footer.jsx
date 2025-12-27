@@ -86,7 +86,7 @@ const Footer = () => {
               <div className="flex items-center gap-2 text-gray-300">
                 <FaEnvelope className="text-primary" />
                 <a 
-                  href="mailto:arham.ali1323@gmail.com"
+                  href="mailto:arhamali.dev@gmail.com"
                   className="hover:text-primary transition-colors"
                 >
                   arham.ali1323@gmail.com

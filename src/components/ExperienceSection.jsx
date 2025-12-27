@@ -7,7 +7,7 @@ const ExperienceSection = () => {
     {
       title: 'Front-End Web Developer',
       company: 'Independent / Self-Taught',
-      period: 'Jan 2022 – Present',
+      period: 'Jan 2024 – Present',
       location: 'Remote',
       type: 'Full-time',
       achievements: [

@@ -73,7 +73,7 @@ export function FloatingDockDemo() {
       icon: (
         <FaEnvelope className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "mailto:arham.ali1323@gmail.com",
+      href: "mailto:arhamali.dev@gmail.com",
     },
   ];
   

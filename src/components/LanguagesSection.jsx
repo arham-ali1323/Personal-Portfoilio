@@ -9,7 +9,6 @@ const LanguagesSection = () => {
       level: 'Proficient',
       description: 'Professional working proficiency with strong communication skills for technical and business contexts.',
       rating: 4,
-      flag: '🇬🇧',
       skills: ['Speaking', 'Writing', 'Reading', 'Technical Communication'],
     },
     {
@@ -17,7 +16,6 @@ const LanguagesSection = () => {
       level: 'Good command',
       description: 'Native language with excellent fluency in both written and spoken communication.',
       rating: 5,
-      flag: '🇵🇰',
       skills: ['Native Fluency', 'Writing', 'Speaking', 'Cultural Understanding'],
     },
     {
@@ -25,7 +23,6 @@ const LanguagesSection = () => {
       level: 'Good command',
       description: 'Strong understanding and communication abilities in Hindi, both spoken and written.',
       rating: 4,
-      flag: '🇮🇳',
       skills: ['Speaking', 'Understanding', 'Basic Writing', 'Cultural Context'],
     },
   ];

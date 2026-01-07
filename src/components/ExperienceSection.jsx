@@ -102,7 +102,7 @@ const ExperienceSection = () => {
                   </div>
                 </div>
                 
-                {/* Location */}
+                {/* Location section */}
                 <div className="text-gray-400">
                   <span className="flex items-center gap-2">
                     📍 {exp.location}

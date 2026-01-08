@@ -69,7 +69,7 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="py-20 relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+        {/* Header Section  */}
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
